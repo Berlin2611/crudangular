@@ -10,7 +10,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping({"/personas"})
+@RequestMapping({"/crud/personas"})
 public class Controller {
     @Autowired
     PersonaService service;

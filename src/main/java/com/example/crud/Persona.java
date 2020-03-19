@@ -3,7 +3,7 @@ package com.example.crud;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "persona")
+@Table(name = "personas")
 public class Persona {
     @Id
     @Column
