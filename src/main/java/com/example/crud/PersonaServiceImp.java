@@ -18,7 +18,7 @@ public class PersonaServiceImp implements PersonaService{
 
     @Override
     public Persona listarId(int id) {
-        return null;
+        return repositorio.findById(id);
     }
 
     @Override
@@ -28,11 +28,15 @@ public class PersonaServiceImp implements PersonaService{
 
     @Override
     public Persona edit(Persona p) {
-        return null;
+        return repositorio.save(p);
     }
 
     @Override
     public Persona delete(int id) {
-        return null;
+        Persona p = repositorio.findById(id);
+        if (p!=null){
+            repositorio.delete(p);
+        }
+        return p;
     }
 }
