@@ -23,7 +23,7 @@ public class PersonaServiceImp implements PersonaService{
 
     @Override
     public Persona add(Persona p) {
-        return null;
+        return repositorio.save(p);
     }
 
     @Override
